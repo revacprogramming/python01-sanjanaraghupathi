@@ -2,7 +2,7 @@
 
 filename = "dataset/romeo.txt"
 
-fname=input("enterfilename:")
+
 fh = open(filename)
 x=fh.readlines()
 lst = list()
