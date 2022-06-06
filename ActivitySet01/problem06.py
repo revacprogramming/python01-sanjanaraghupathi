@@ -12,6 +12,7 @@ while True:
         a.append(num)
     except:
         print("Invalid input")
+        continue
     else:
         largest = max(a)
         smallest = min(a)
