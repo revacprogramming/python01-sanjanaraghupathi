@@ -87,6 +87,20 @@ b= a.split()
 print(b[0])'''
 
 
+#program 8
+n=10
+a=0
+b=1
+count=0
+while (count<=n) :
+    sum=a+b
+    a=b
+    b=sum
+    print(a)
+    
+    count=count+1
+
+
 
 
 
