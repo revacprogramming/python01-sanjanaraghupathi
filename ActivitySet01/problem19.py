@@ -88,7 +88,7 @@ print(b[0])'''
 
 
 #program 8
-n=10
+'''n=10
 a=0
 b=1
 count=0
@@ -98,7 +98,37 @@ while (count<=n) :
     b=sum
     print(a)
     
-    count=count+1
+    count=count+1'''
+
+#square root of a number
+'''from math import sqrt
+
+
+a=float(input('Enter a number'))
+b=sqrt(a)
+print(b) '''
+
+'''b=float(input('Enter a number'))
+a=b/2
+a2=b
+while(a2!=a):
+    a2=a
+    a=((a+b/a))/2
+print(a)'''
+
+#sum of n different numbers 
+
+b=int(input('enter the values of n'))
+n=1
+sum=0
+while(n<=b):
+    c=int(input('enter the number'))
+    
+    sum=sum+c
+    n=n+1
+print('the sum of numbers is',sum)
+
+
 
 
 
