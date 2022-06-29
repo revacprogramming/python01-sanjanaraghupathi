@@ -11,3 +11,8 @@ y=a.find(' ',x)
 b=a[x+1:y]
 print(b)'''
 
+p=int(input('principle'))
+r=int(input('rate'))
+t=int(input('time'))
+SI=p*t*r
+print(SI)

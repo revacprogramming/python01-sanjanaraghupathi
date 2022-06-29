@@ -56,9 +56,11 @@ if (age>=18):
 else:
     print('not eligible')'''
 
-#score between
-a=float(input('Enter the score'))
-range=
+jjj={'chuck':1,'fred':42,'jan':100}
+print(jjj)
+ooo={}
+print(ooo)
+
 
 
 

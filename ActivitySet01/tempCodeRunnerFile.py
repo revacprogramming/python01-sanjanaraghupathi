@@ -1,4 +1,7 @@
-hrs = float(input("Enter hours"))
-rate=float(input("enter rate"))
-grosspay=(hrs*rate)
-print("Pay:",grosspay)
+a=dict()
+a['integer']=1
+a['candy']=2
+a['tissue']=5
+print(a)
+a['candy']=a['candy']+1
+print(a)

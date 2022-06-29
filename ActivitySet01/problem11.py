@@ -3,15 +3,14 @@
 filename = "dataset/mbox-short.txt"
 f=open(filename,"r")
 count=0
+
 h=f.readlines()
-'''for i in h:
-    k=i.split()
-    if i.startswith("From: "):
-        print(k[1])'''
+
 counts=dict()
+emails=[]
 for i in h:
     if i.startswith("From: "):
-        emails=i.split()
+        emails.append(i.split()[1])
 for email in emails:
     if email not in counts:
             counts[email]=1
