@@ -1,23 +1,18 @@
 # Tuples
-
-filename = "dataset/mbox-short.txt"
-f=open(filename,"r")
-count=0
-
-h=f.readlines()
-
+fhand=open("dataset/romeo.txt")
 counts=dict()
-emails=[]
-for i in h:
-    if i.startswith("From: "):
-        emails.append(i.split()[1])
-for email in emails:
-    if email not in counts:
-            counts[email]=1
-    else:
-            counts[email]+=1
-            
-print(email,counts[email])   
+for line in fhand:
+        words=line.split()
+        for word in words:
+                counts[word]=counts.get(word,0)+1
+lst=list()
+for k,v in counts.items():
+        newup=(v,k)
+        lst.append(newup)
+lst=sorted(lst,reverse=True)
+for v,k in lst[:10]:
+        print(k,v)
+
       
 
 
